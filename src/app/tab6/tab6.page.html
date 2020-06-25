@@ -1,0 +1,289 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="primary">
+    <ion-title class="title" >Modifier mon profil</ion-title>
+    <ion-button (click) = "closer()" color="white" slot="end">
+      Quitter
+      <ion-icon color="secondary" slot="end" name="exit-outline"></ion-icon>
+    </ion-button>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-item>
+    <ion-label position="stacked">Nom<ion-text color="danger">*</ion-text></ion-label>
+    <ion-input required type="text"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label position="stacked">Prénom<ion-text color="danger">*</ion-text></ion-label>
+    <ion-input required type="text"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Code Postal<ion-text color="danger">*</ion-text></ion-label>
+
+    <ion-select required [(ngModel)]="postal">
+      <ion-select-option>31000</ion-select-option>
+      <ion-select-option>31100</ion-select-option>
+      <ion-select-option>31200</ion-select-option>
+      <ion-select-option>31300</ion-select-option>
+      <ion-select-option>31400</ion-select-option>
+      <ion-select-option>31500</ion-select-option>
+      <ion-select-option>31600</ion-select-option>
+      <ion-select-option>31700</ion-select-option>
+      <ion-select-option>31800</ion-select-option>
+      <ion-select-option>31900</ion-select-option>
+
+    </ion-select>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Premier sport<ion-text color="danger">*</ion-text></ion-label>
+
+    <ion-select required [(ngModel)]="sportun" >
+      <ion-select-option>Accrobranche</ion-select-option>
+      <ion-select-option>Athlétisme</ion-select-option>
+      <ion-select-option>Badminton</ion-select-option>
+      <ion-select-option>Baseball</ion-select-option>
+      <ion-select-option>Basketball</ion-select-option>
+      <ion-select-option>Bowling</ion-select-option>
+      <ion-select-option>Boxe</ion-select-option>
+      <ion-select-option>Canoé Kayak</ion-select-option>
+      <ion-select-option>Danse</ion-select-option>
+      <ion-select-option>Equitation</ion-select-option>
+      <ion-select-option>Escalade</ion-select-option>
+      <ion-select-option>Escrime</ion-select-option>
+      <ion-select-option>Foot à 5</ion-select-option>
+      <ion-select-option>Football</ion-select-option>
+      <ion-select-option>Football Américain</ion-select-option>
+      <ion-select-option>Golf</ion-select-option>
+      <ion-select-option>Gymnastique</ion-select-option>
+      <ion-select-option>Handball</ion-select-option>
+      <ion-select-option>Handisport</ion-select-option>
+      <ion-select-option>Hockey</ion-select-option>
+      <ion-select-option>Jogging</ion-select-option>
+      <ion-select-option>Judo</ion-select-option>
+      <ion-select-option>Karaté</ion-select-option>
+      <ion-select-option>Karting</ion-select-option>
+      <ion-select-option>LaserQuest</ion-select-option>
+      <ion-select-option>Lutte</ion-select-option>
+      <ion-select-option>MMA</ion-select-option>
+      <ion-select-option>Moto</ion-select-option>
+      <ion-select-option>Musculation</ion-select-option>
+      <ion-select-option>Natation</ion-select-option>
+      <ion-select-option>Paintball</ion-select-option>
+      <ion-select-option>Patinage</ion-select-option>
+      <ion-select-option>Ping-Pong</ion-select-option>
+      <ion-select-option>Plongée</ion-select-option>
+      <ion-select-option>Pêche</ion-select-option>
+      <ion-select-option>Randonnée Pédestre</ion-select-option>
+      <ion-select-option>Rugby</ion-select-option>
+      <ion-select-option>Skate</ion-select-option>
+      <ion-select-option>Sports d'hiver</ion-select-option>
+      <ion-select-option>Sports Nautique</ion-select-option>
+      <ion-select-option>Squash</ion-select-option>
+      <ion-select-option>Street Workout</ion-select-option>
+      <ion-select-option>Tennis</ion-select-option>
+      <ion-select-option>Triathlon</ion-select-option>
+      <ion-select-option>Trottinette</ion-select-option>
+      <ion-select-option>Volleyball</ion-select-option>
+      <ion-select-option>Yoga</ion-select-option>
+    </ion-select>
+  </ion-item>
+  <ion-item>
+    <ion-label>Second sport<ion-text color="danger">*</ion-text></ion-label>
+
+    <ion-select required [(ngModel)]="sportdeux">
+      <ion-select-option>Accrobranche</ion-select-option>
+      <ion-select-option>Athlétisme</ion-select-option>
+      <ion-select-option>Badminton</ion-select-option>
+      <ion-select-option>Baseball</ion-select-option>
+      <ion-select-option>Basketball</ion-select-option>
+      <ion-select-option>Bowling</ion-select-option>
+      <ion-select-option>Boxe</ion-select-option>
+      <ion-select-option>Canoé Kayak</ion-select-option>
+      <ion-select-option>Danse</ion-select-option>
+      <ion-select-option>Equitation</ion-select-option>
+      <ion-select-option>Escalade</ion-select-option>
+      <ion-select-option>Escrime</ion-select-option>
+      <ion-select-option>Foot à 5</ion-select-option>
+      <ion-select-option>Football</ion-select-option>
+      <ion-select-option>Football Américain</ion-select-option>
+      <ion-select-option>Golf</ion-select-option>
+      <ion-select-option>Gymnastique</ion-select-option>
+      <ion-select-option>Handball</ion-select-option>
+      <ion-select-option>Handisport</ion-select-option>
+      <ion-select-option>Hockey</ion-select-option>
+      <ion-select-option>Jogging</ion-select-option>
+      <ion-select-option>Judo</ion-select-option>
+      <ion-select-option>Karaté</ion-select-option>
+      <ion-select-option>Karting</ion-select-option>
+      <ion-select-option>LaserQuest</ion-select-option>
+      <ion-select-option>Lutte</ion-select-option>
+      <ion-select-option>MMA</ion-select-option>
+      <ion-select-option>Moto</ion-select-option>
+      <ion-select-option>Musculation</ion-select-option>
+      <ion-select-option>Natation</ion-select-option>
+      <ion-select-option>Paintball</ion-select-option>
+      <ion-select-option>Patinage</ion-select-option>
+      <ion-select-option>Ping-Pong</ion-select-option>
+      <ion-select-option>Plongée</ion-select-option>
+      <ion-select-option>Pêche</ion-select-option>
+      <ion-select-option>Randonnée Pédestre</ion-select-option>
+      <ion-select-option>Rugby</ion-select-option>
+      <ion-select-option>Skate</ion-select-option>
+      <ion-select-option>Sports d'hiver</ion-select-option>
+      <ion-select-option>Sports Nautique</ion-select-option>
+      <ion-select-option>Squash</ion-select-option>
+      <ion-select-option>Street Workout</ion-select-option>
+      <ion-select-option>Tennis</ion-select-option>
+      <ion-select-option>Triathlon</ion-select-option>
+      <ion-select-option>Trottinette</ion-select-option>
+      <ion-select-option>Volleyball</ion-select-option>
+      <ion-select-option>Yoga</ion-select-option>
+    </ion-select>
+  </ion-item>
+  <ion-item>
+    <ion-label>Troisième sport<ion-text color="danger">*</ion-text></ion-label>
+
+    <ion-select required [(ngModel)]="sporttrois">
+      <ion-select-option>Accrobranche</ion-select-option>
+      <ion-select-option>Athlétisme</ion-select-option>
+      <ion-select-option>Badminton</ion-select-option>
+      <ion-select-option>Baseball</ion-select-option>
+      <ion-select-option>Basketball</ion-select-option>
+      <ion-select-option>Bowling</ion-select-option>
+      <ion-select-option>Boxe</ion-select-option>
+      <ion-select-option>Canoé Kayak</ion-select-option>
+      <ion-select-option>Danse</ion-select-option>
+      <ion-select-option>Equitation</ion-select-option>
+      <ion-select-option>Escalade</ion-select-option>
+      <ion-select-option>Escrime</ion-select-option>
+      <ion-select-option>Foot à 5</ion-select-option>
+      <ion-select-option>Football</ion-select-option>
+      <ion-select-option>Football Américain</ion-select-option>
+      <ion-select-option>Golf</ion-select-option>
+      <ion-select-option>Gymnastique</ion-select-option>
+      <ion-select-option>Handball</ion-select-option>
+      <ion-select-option>Handisport</ion-select-option>
+      <ion-select-option>Hockey</ion-select-option>
+      <ion-select-option>Jogging</ion-select-option>
+      <ion-select-option>Judo</ion-select-option>
+      <ion-select-option>Karaté</ion-select-option>
+      <ion-select-option>Karting</ion-select-option>
+      <ion-select-option>LaserQuest</ion-select-option>
+      <ion-select-option>Lutte</ion-select-option>
+      <ion-select-option>MMA</ion-select-option>
+      <ion-select-option>Moto</ion-select-option>
+      <ion-select-option>Musculation</ion-select-option>
+      <ion-select-option>Natation</ion-select-option>
+      <ion-select-option>Paintball</ion-select-option>
+      <ion-select-option>Patinage</ion-select-option>
+      <ion-select-option>Ping-Pong</ion-select-option>
+      <ion-select-option>Plongée</ion-select-option>
+      <ion-select-option>Pêche</ion-select-option>
+      <ion-select-option>Randonnée Pédestre</ion-select-option>
+      <ion-select-option>Rugby</ion-select-option>
+      <ion-select-option>Skate</ion-select-option>
+      <ion-select-option>Sports d'hiver</ion-select-option>
+      <ion-select-option>Sports Nautique</ion-select-option>
+      <ion-select-option>Squash</ion-select-option>
+      <ion-select-option>Street Workout</ion-select-option>
+      <ion-select-option>Tennis</ion-select-option>
+      <ion-select-option>Triathlon</ion-select-option>
+      <ion-select-option>Trottinette</ion-select-option>
+      <ion-select-option>Volleyball</ion-select-option>
+      <ion-select-option>Yoga</ion-select-option>
+    </ion-select>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Coach Sportif</ion-label>
+    <ion-checkbox >Label</ion-checkbox>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Livre favori<ion-text color="danger">*</ion-text></ion-label>
+    <ion-select [(ngModel)]="book" >
+      <ion-select-option>Biographies/autobiographies classiques</ion-select-option>
+      <ion-select-option>Biographies/autobiographies modernes</ion-select-option>
+      <ion-select-option>Business</ion-select-option>
+      <ion-select-option>Fables classiques</ion-select-option>
+      <ion-select-option>Littérature étrangère: Afrique</ion-select-option>
+      <ion-select-option>Littérature étrangère: Amérique du Nord</ion-select-option>
+      <ion-select-option>Littérature étrangère: Amérique du Sud</ion-select-option>
+      <ion-select-option>Littérature étrangère: Asie</ion-select-option>
+      <ion-select-option>Littérature étrangère: Europe</ion-select-option>
+      <ion-select-option>Littérature étrangère: Océanie</ion-select-option>
+      <ion-select-option>Merveilleux/fantastique classiques</ion-select-option>
+      <ion-select-option>Nouvelles classiques</ion-select-option>
+      <ion-select-option>Poésies classiques</ion-select-option>
+      <ion-select-option>Poésies modernes</ion-select-option>
+      <ion-select-option>Romans classiques</ion-select-option>
+      <ion-select-option>Romans courtois classiques</ion-select-option>
+      <ion-select-option>Romans modernes aventures</ion-select-option>
+      <ion-select-option>Romans modernes policiers</ion-select-option>
+      <ion-select-option>Romans modernes science-fiction</ion-select-option>
+      <ion-select-option>Théâtres classiques</ion-select-option>
+      <ion-select-option>Théâtres modernes</ion-select-option>
+      <ion-select-option>Echanges épistolaires classiques</ion-select-option>
+    </ion-select>
+  </ion-item>
+  <ion-item>
+   <ion-label>Restaurant favori<ion-text color="danger">*</ion-text></ion-label>
+   <ion-select [(ngModel)]="resto" >
+      <ion-select-option>Africain</ion-select-option>
+      <ion-select-option>Americain</ion-select-option>
+      <ion-select-option>Asiatique</ion-select-option>
+      <ion-select-option>Bistro</ion-select-option>
+      <ion-select-option>Brunch</ion-select-option>
+      <ion-select-option>Burger</ion-select-option>
+      <ion-select-option>Européen</ion-select-option>
+      <ion-select-option>Fast Food</ion-select-option>
+      <ion-select-option>Grillade</ion-select-option>
+      <ion-select-option>Healthy</ion-select-option>
+      <ion-select-option>Indien</ion-select-option>
+      <ion-select-option>Italien</ion-select-option>
+      <ion-select-option>Latino</ion-select-option>
+      <ion-select-option>Moderne</ion-select-option>
+      <ion-select-option>Moyent-Orient</ion-select-option>
+      <ion-select-option>Méditerranéen</ion-select-option>
+      <ion-select-option>Poisson</ion-select-option>
+      <ion-select-option>Restaurant Etoilé</ion-select-option>
+      <ion-select-option>Sushi</ion-select-option>
+      <ion-select-option>Tacos</ion-select-option>
+      <ion-select-option>Vegan</ion-select-option>
+      <ion-select-option>Viande</ion-select-option>
+    </ion-select>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Musée favori<ion-text color="danger">*</ion-text></ion-label>
+    <ion-select [(ngModel)]="muse" >
+      <ion-select-option>Archéologie</ion-select-option>
+      <ion-select-option>Art</ion-select-option>
+      <ion-select-option>Arts décoratifs</ion-select-option>
+      <ion-select-option>Beaux Arts</ion-select-option>
+      <ion-select-option>Ethnologie</ion-select-option>
+      <ion-select-option>Histoire</ion-select-option>
+      <ion-select-option>Histoire naturelle</ion-select-option>
+      <ion-select-option>Sciences</ion-select-option>
+      <ion-select-option>Techniques</ion-select-option>
+    </ion-select>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Musique<ion-text color="danger">*</ion-text></ion-label>
+    <ion-select required [(ngModel)]="musique">
+      <ion-select-option>rap</ion-select-option>
+      <ion-select-option>rap </ion-select-option>
+      <ion-select-option>ou rap</ion-select-option>
+    </ion-select>
+  </ion-item>
+
+
+  <ion-button (click)="actu()"  expand="block" shape="round" >Actualiser</ion-button>
+
+  <ion-button (click)="submiter()"  expand="block" shape="round" [disabled]="missing" >Sauvegarder</ion-button>
+
+</ion-content>

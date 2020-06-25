@@ -1,0 +1,22 @@
+<ion-header [translucent]="true">
+    <ion-toolbar>
+        <ion-title>
+            Recherche
+        </ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-toolbar>
+        <ion-searchbar type="text" debounce="150" (ionChange)="getItems($event)" shape="round"
+                       class="barre-de-recherche" color="primary" animated="True" placeholder="Rechercher" showCancelButton="never">
+        </ion-searchbar>
+        <ion-list *ngIf="isItemAvailable" inset="True" lines="none">
+            <ion-button *ngFor="let item of items" (click)="cons(item)">
+                {{ item }}
+            </ion-button>
+        </ion-list>
+
+    </ion-toolbar>
+
+</ion-content>

@@ -1,0 +1,128 @@
+<ion-header [translucent]="true">
+    <ion-toolbar color="primary">
+        <ion-title class="title">
+            Principal
+        </ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="True">
+    <ion-header>
+        <ion-toolbar>
+            <ion-title size="large">Principale</ion-title>
+        </ion-toolbar>
+    </ion-header>
+    <ion-button (click)="showModal()"  expand="block" *ngIf="connect == 'False'">Me connecter</ion-button>
+    <ion-button (click)="deconnexion()" expand="block" *ngIf="connect == 'True'">Me déconnecter</ion-button>
+    <!-- <ion-card>
+      <ion-card-header>
+        <ion-card-title class="title">Restaurant Brunch, Chez Max</ion-card-title>
+      </ion-card-header>
+      <img class="image-card" src="assets/restaurant.jpg" />
+      <ion-card-content class="description">
+        Horaires: 10h-14h
+      </ion-card-content>
+      <ion-card-content class="description">
+        Prix: Moins de 15€
+      </ion-card-content>
+      <ion-card-content class="description">
+        Adresse: 25 rue Emile Barrière 31200 Toulouse
+      </ion-card-content>
+      <ion-card-content class="description">
+        <a href="https://www.ticketmaster.fr/fr/manifestation/concert-hommage-a-johnny-billet/idmanif/489591"><div class="reservation">Pour réserver !</div></a>
+      </ion-card-content>
+    </ion-card>
+      <ion-card>
+        <ion-img class="image-card" src="assets/livre.jpg"></ion-img>
+        <ion-card-header>
+          <ion-card-title class="title">Business Plans pour LES NULS</ion-card-title>
+        </ion-card-header>
+        <ion-card-content class="description">
+          Auteur: Paul Tiffany
+        </ion-card-content>
+        <ion-card-content class="description">
+          Prix: 15€
+        </ion-card-content>
+        <ion-card-content class="description">
+          <a href="https://www.ticketmaster.fr/fr/manifestation/concert-hommage-a-johnny-billet/idmanif/489591"><div class="reservation">Pour l'acheter !</div></a>
+        </ion-card-content>
+      </ion-card>
+    <ion-card>
+      <ion-card-header>
+        <ion-card-title class="title">Running canal du midi</ion-card-title>
+      </ion-card-header>
+      <img class="image-card" src="assets/sport.jpg" />
+      <ion-card-content class="description">
+        Horaires: 10h-14h
+      </ion-card-content>
+      <ion-card-content class="description">
+        Adresse: 25 rue Emile Barrière 31200 Toulouse
+      </ion-card-content>
+      <ion-card-content class="description">
+        <a href="https://www.i-run.fr/?esl-k=bing|n|c80127011488681|me|k80126919153158|p|t|a1282030576370772|g298039886&eseg-name=netaff_affiliateid&eseg-item=13234&msclkid=b15c3ab03c9f1f6e0b94646e000f244a&utm_source=bing&utm_medium=cpc&utm_campaign=FR%20-%20i-Run%20G%C3%A9n%C3%A9rique%20%7C%7C%20gen-gen&utm_term=site%20running&utm_content=A%20%7C%20Boutique%20%2B%20Running%20-%20Exact">Site web</a>
+      </ion-card-content>
+    </ion-card>
+    <ion-card>
+      <ion-img class="image-livre-card" src="assets/livre.jpg"></ion-img>
+      <ion-card-header>
+        <ion-card-title class="title">Business Plans pour LES NULS</ion-card-title>
+      </ion-card-header>
+      <ion-card-content class="description">
+        Auteur: Paul Tiffany
+      </ion-card-content>
+      <ion-card-content class="description">
+        Prix: 15€
+      </ion-card-content>
+      <ion-card-content class="description">
+        <a href="https://www.ticketmaster.fr/fr/manifestation/concert-hommage-a-johnny-billet/idmanif/489591"><div class="reservation">Pour l'acheter !</div></a>
+      </ion-card-content>
+    </ion-card>
+    <ion-card>
+      <img class="image-card" src="assets/musée.jpg" />
+      <ion-card-header>
+        <ion-card-title class="title">Musée d'art</ion-card-title>
+      </ion-card-header>
+      <ion-card-content class="description">
+        Horaires: 10h-13h 14h30-19h
+      </ion-card-content>
+      <ion-card-content class="description">
+        Prix: gratuit
+      </ion-card-content>
+      <ion-card-content class="description">
+        Adresse: 25 rue des Musées 31200 Toulouse
+      </ion-card-content>
+      <ion-card-content class="description">
+        <a href="https://www.ticketmaster.fr/fr/manifestation/concert-hommage-a-johnny-billet/idmanif/489591"><div class="reservation">Pour réserver !</div></a>
+      </ion-card-content>
+    </ion-card> -->
+
+
+    <ion-card>
+        <ion-img class="image-card" src="assets/livre.jpg"></ion-img>
+        <ion-card-header>
+            <ion-card-title class="title">Business Plans pour LES NULS</ion-card-title>
+        </ion-card-header>
+
+        <ion-card-content class="description">
+            Auteur: Paul Tiffany
+        </ion-card-content>
+
+
+        <ion-card-content class="description">
+            Prix: 15€
+        </ion-card-content>
+
+        <ion-card-content class="description">
+            <a href="https://www.ticketmaster.fr/fr/manifestation/concert-hommage-a-johnny-billet/idmanif/489591"><div class="reservation">Pour l'acheter !</div></a>
+        </ion-card-content>
+
+    </ion-card>
+
+    <ion-button (click)="gets()">ges</ion-button>
+    <ion-card>
+        <ion-card-content class="description">
+            le premier sport est la/le/l' {{sportun}}
+        </ion-card-content>
+    </ion-card>
+
+</ion-content>

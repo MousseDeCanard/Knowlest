@@ -1,0 +1,27 @@
+<ion-header >
+  <ion-toolbar>
+    <ion-title>Connexion</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content style="text-align: center">
+  <ion-item id="usermail">
+    <ion-label color="white">Email</ion-label>
+    <ion-input [(ngModel)]="mail" color="white" type="mail" placeholder="monadressemail@example.net"></ion-input>
+  </ion-item>
+  
+  <ion-item id="userpass" >
+    <ion-label color="white">Mot de passe</ion-label>
+    <ion-input [(ngModel)]="pass" color="white" type="password" placeholder="monmotdepasse"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Police de confidentialité</ion-label>
+    <ion-checkbox >Accepter</ion-checkbox>
+  </ion-item>
+
+  <ion-button (click) = "submit()" (click) = "close()" >
+    <ion-icon name="checkmark" ></ion-icon>
+    Valider mes réponses
+  </ion-button>
+</ion-content>

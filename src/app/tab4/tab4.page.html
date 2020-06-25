@@ -1,0 +1,57 @@
+<ion-header [translucent]="true">
+    <ion-toolbar color="primary">
+        <ion-title class="title">
+            Profil
+        </ion-title>
+        <ion-button (click)="showModale()" expand="block" color="primary" padding>Modifier mon profil</ion-button>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+    <h2 class="title">Ton Profil</h2>
+
+
+    <ion-item class="nom-prenom" lines="none">
+        <ion-title>Maxime BOUE</ion-title>
+    </ion-item>
+
+
+    <div class="flex">
+        <div class="border-blue">
+            <div class="border-white">
+                <div class="img-box">
+                    <img src="../../assets/avatar.jpg">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <ion-card class="citation">
+        <ion-card-title class="icon-title-profil"><ion-icon name="football-outline"></ion-icon></ion-card-title>
+        <ion-card-content class="title">Football / Rugby / Tennis</ion-card-content>
+    </ion-card>
+
+    <ion-card class="citation">
+        <ion-card-title class="icon-title-profil"><ion-icon name="fast-food-outline"></ion-icon></ion-card-title>
+        <ion-card-content class="title">Fast-Food / Italien / Sushi</ion-card-content>
+    </ion-card>
+
+    <ion-card class="citation">
+        <ion-card-title class="icon-title-profil"><ion-icon name="library-outline"></ion-icon></ion-card-title>
+        <ion-card-content class="title">Fables classiques / Autobiographie classiques / Business</ion-card-content>
+    </ion-card>
+
+    <ion-card class="citation">
+        <ion-card-title class="icon-title-profil"><ion-icon name="brush-outline"></ion-icon></ion-card-title>
+        <ion-card-content class="title">Sciences</ion-card-content>
+    </ion-card>
+
+    <ion-card class="citation">
+        <ion-card-title class="icon-title-profil"><ion-icon name="musical-notes-outline"></ion-icon></ion-card-title>
+        <ion-card-content class="title">Rap / R'n'B / Jazz</ion-card-content>
+    </ion-card>
+
+
+</ion-content>
